@@ -1,1 +1,1 @@
-# learn-terraform-enforce-policies
+# Learn how to enforce policies on Terraform Cloud
