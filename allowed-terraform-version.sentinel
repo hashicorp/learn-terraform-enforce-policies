@@ -28,6 +28,11 @@ main = rule {
 
 import "tfconfig/v2" as tfconfig
 
+param "organization" {
+  value = "AWS"
+}
+
+
 #import "tfconfig-functions" as config
 
 # Standard Imports
