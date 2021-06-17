@@ -25,7 +25,10 @@ main = rule {
 
 # Import common-functions/tfconfig-functions/tfconfig-functions.sentinel
 # with alias "config"
-import "tfconfig-functions" as config
+
+import "tfconfig/v2" as tfconfig
+
+#import "tfconfig-functions" as config
 
 # Standard Imports
 import "http"
