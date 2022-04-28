@@ -3,11 +3,11 @@
 
 # Import common-functions/tfplan-functions/tfplan-functions.sentinel
 # with alias "plan"
-import "tfplan-functions.sentinel" as plan
+#import "tfplan-functions.sentinel" as plan
 
 # Import azure-functions/azure-functions.sentinel
 # with alias "azure"
-import "azure-functions.sentinel" as azure
+#import "azure-functions.sentinel" as azure
 
 # List of Azure resources that are required to have name/value tags.
 param resource_types default [
@@ -23,12 +23,12 @@ param mandatory_tags default ["environment"]
 
 # Get all Azure Resources with standard tags
 allAzureResourcesWithStandardTags =
-                        azure.find_resources_with_standard_tags(resource_types)
+                        azure-functions.find_resources_with_standard_tags(resource_types)
 
 # Filter to Azure resources with violations using azurerm_virtual_machine
 # Warnings will be printed for all violations since the last parameter is true
 violatingAzureResources =
-      plan.filter_attribute_not_contains_list(allAzureResourcesWithStandardTags,
+      tfplan-functions.filter_attribute_not_contains_list(allAzureResourcesWithStandardTags,
                     "tags", mandatory_tags, true)
 
 
