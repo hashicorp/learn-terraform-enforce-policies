@@ -28,7 +28,7 @@ allAzureResourcesWithStandardTags =
 # Filter to Azure resources with violations using azurerm_virtual_machine
 # Warnings will be printed for all violations since the last parameter is true
 violatingAzureResources =
-      tfplan.filter_attribute_not_contains_list(allAzureResourcesWithStandardTags,
+      plan.filter_attribute_not_contains_list(allAzureResourcesWithStandardTags,
                     "tags", mandatory_tags, true)
 
 
