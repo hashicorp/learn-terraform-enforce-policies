@@ -4,6 +4,6 @@ module "tfplan-functions"{
 module "azure-functions"{
   source = "./azure-functions.sentinel"
 }
-policy "size" {
+policy "tags" {
   enforcement_level = "hard-mandatory"
 }
