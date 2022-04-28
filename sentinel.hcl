@@ -1,4 +1,4 @@
-module "tenforce-mandatory-tags"{
+module "tfplan-functions"{
   source = "./tfplan-functions.sentinel"
 }
 module "azure-functions"{
