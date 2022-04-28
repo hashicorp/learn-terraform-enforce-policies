@@ -65,7 +65,7 @@ validate_attribute_in_list = func(type, attribute, allowed_values) {
             "that is computed.")
       # If you want computed values to cause the policy to fail,
       # uncomment the next line.
-      # validated = false
+      validated = false
     } else {
       # Validate that each instance has allowed value
       if r.applied[attribute] else "" not in allowed_values {
