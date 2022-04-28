@@ -1,3 +1,3 @@
-policy "allowed-terraform-version" {
+policy "size" {
   enforcement_level = "hard-mandatory"
 }
