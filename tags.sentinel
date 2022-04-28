@@ -3,11 +3,11 @@
 
 # Import common-functions/tfplan-functions/tfplan-functions.sentinel
 # with alias "plan"
-#import "tfplan-functions" as plan
+import "tfplan-functions" as plan
 
 # Import azure-functions/azure-functions.sentinel
 # with alias "azure"
-#import "azure-functions" as azure
+import "azure-functions" as azure
 
 # List of Azure resources that are required to have name/value tags.
 param resource_types default [
