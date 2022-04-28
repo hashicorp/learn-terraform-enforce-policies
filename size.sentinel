@@ -35,7 +35,7 @@ find_resources_from_plan = func(type) {
       }
     }
   }
-
+  print resources
   return resources
 }
 
